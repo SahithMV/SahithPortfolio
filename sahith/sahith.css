@@ -1,0 +1,394 @@
+* {
+    color: #000000;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
+    width: 100%;
+    background-color: #6c757d;
+    border-radius: 0.2rem;
+}
+
+.right ul {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+    padding-right: 12rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: monospace;
+}
+
+.pic {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 1rem;
+}
+
+.pic img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 58rem;
+}
+
+.sections {
+    display: flex;
+    position: relative;
+}
+
+.leftinfo {
+    width: 50%;
+    background-color: #ced4da;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.rightinfo {
+    width: 50%;
+    background-color: #adb5bd;
+}
+
+.profileimg {
+    height: 18rem;
+    width: 18rem;
+    margin-top: 3rem;
+
+}
+
+.profileimg img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2rem;
+}
+
+.info {
+    width: 30rem;
+    padding-left: 12rem;
+}
+
+#objective_heading {
+    position: relative;
+    left: 5rem;
+    margin: 2px;
+}
+
+#objective {
+    margin: 0px;
+    position: relative;
+    right: 4rem;
+}
+
+#myskills {
+    margin: 0px;
+    position: relative;
+    left: 5rem;
+}
+
+.skills {
+    margin: 0px;
+    position: relative;
+    right: 4rem
+}
+
+
+.box1,
+.box2,
+.box3 {
+    height: 10%;
+    width: 10%;
+    border-left: 2px solid rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+#School {
+    position: absolute;
+    top: 149px;
+    right: 407px;
+}
+
+#inter {
+    position: absolute;
+    top: 245px;
+    right: 436px;
+}
+
+#btech {
+    position: absolute;
+    top: 341px;
+    right: 200px;
+}
+
+.borderleft {
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    border-left: 2px solid rgb(0, 0, 0);
+    height: 5.2rem;
+    ;
+}
+
+.rightinfo h1 {
+    margin-left: 16rem;
+}
+
+.rightinfo h1::after {
+    content: "";
+    position: absolute;
+    left: 62rem;
+    bottom: 55.2rem;
+    height: 5px;
+    width: 0%;
+    background-color: #454343;
+    border-top-right-radius: 0.50rem;
+    border-bottom-left-radius: 0.50rem;
+    border-top-left-radius: 0.50rem;
+    border-bottom-right-radius: 0.50rem;
+    transition: all ease 0.50s;
+}
+
+.rightinfo h1:hover::after {
+    width: 12.5%;
+
+}
+
+
+.rightinfo i {
+    font-size: 2rem;
+}
+
+.projects {
+    margin-top: 2.3rem;
+    padding-left: 5rem;
+}
+
+#projects_heading {
+    padding-top: 5rem;
+    margin-left: 16rem;
+}
+
+
+
+#gal_desc {
+    line-height: 1.5rem;
+}
+
+#footer {
+    text-align: center;
+    background-color: #6c757d;
+}
+
+#footer i {
+    font-size: 2rem;
+    color: #079dee;
+}
+
+
+/* -----xxxxxxxxxxxxxxxxxxxxxxxxxx----- */
+
+li {
+    /*style the li tag*/
+    list-style-type: none;
+    font-family: sans-serif;
+}
+
+.skills {
+    /*style the text*/
+    width: 500px;
+}
+
+.skills li {
+    /*set margin of li*/
+    margin: 20px 0;
+}
+
+.bar {
+    /*style the bar*/
+    background-color: #353b48;
+    display: block;
+    height: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #575757b3;
+}
+
+.bar span {
+    /*style the span tag*/
+    height: 2px;
+    float: left;
+    background-color: #b1b1b1;
+}
+
+.html {
+    /*set skills and animation of html*/
+    width: 80%;
+    animation: html 2s;
+}
+
+.css {
+    /*set skills and animation of css*/
+    width: 70%;
+    animation: css 2s;
+}
+
+.javascript {
+    /*set skills and animation of javascript*/
+    width: 50%;
+    animation: javascript 2s;
+}
+
+.sql {
+    /*set skills and animation of jquery*/
+    width: 30%;
+    animation: jquery 2s;
+}
+
+@keyframes html {
+
+    /*animate html skills*/
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes css {
+
+    /*animate css skills*/
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes javascript {
+
+    /*animate javascript skills*/
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes jquery {
+
+    /*animate jquery skills*/
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+/* -----xxxxxxxxxxxxxxxxxxxxxxxxxx----- */
+.tooltip {
+    position: relative;
+    display: inline-block;
+
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 3px 3px;
+    position: absolute;
+    /* top: -5px; */
+    right: 120%;
+    background-color: rgb(65 78 110);
+    font-size: 0.92rem;
+    transition: 1.5s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgb(65 78 110);
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
+
+/* =============================================================== */
+
+.tooltip2 {
+    position: relative;
+    display: inline-block;
+    animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3s;
+
+}
+
+.tooltip2 .tooltiptext2 {
+    visibility: hidden;
+    background-color: rgb(65 78 110);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 2;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+    padding: 0.50px;
+    padding-right: 4px;
+    font-size: 0.92rem;
+    transition: 1.5s;
+}
+
+.tooltip2 .tooltiptext2::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent rgb(65 78 110) transparent;
+
+}
+
+.tooltip2:hover .tooltiptext2 {
+    visibility: visible;
+
+}
